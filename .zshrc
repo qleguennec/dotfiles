@@ -87,9 +87,16 @@ export USER42=qle-guen
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+if [[ "$(uname)" == "Linux" ]]; then
+	CLIP_CMP="xclip -selection c"
+else
+	CLIP_CMP="pbcopy"
+fi
+
 alias v='nvim'
 alias vim='nvim'
 alias install='sudo apt-get install'
 alias search='apt search'
 alias open='xdg-open'
-alias update-src='find src -name "*.c" | sed "s/src\//SRC += /g" > src.mk'
+alias src="find . -maxdepth 1 -name '*.c' | sed 's/.\//SRC += /g' | sort | $CLIP_CMP"

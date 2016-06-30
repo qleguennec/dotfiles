@@ -2,16 +2,10 @@ set number
 
 call plug#begin()
 
-Plug 'chriskempson/vim-tomorrow-theme'
 Plug 'vim-airline/vim-airline'
 Plug 'morhetz/gruvbox'
-Plug 'rust-lang/rust'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'lambdatoast/elm.vim'
-Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-surround'
-Plug 'valloric/youcompleteme'
-Plug 'sjl/badwolf'
 Plug 'godlygeek/tabular'
 Plug 'raimondi/delimitmate'
 Plug 'myusuf3/numbers.vim'
