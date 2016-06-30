@@ -52,3 +52,4 @@ noremap l <C-w>k
 noremap ; <C-w>l
 noremap W :wq<CR>
 noremap w :w<CR>
+noremap \ "+y
