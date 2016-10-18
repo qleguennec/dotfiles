@@ -5,7 +5,7 @@
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="agnoster"
+ZSH_THEME="pure"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -62,6 +62,7 @@ bindkey "^R" history-incremental-search-backward
 
 export MAIL42=qle-guen@student.42.fr
 export USER42=qle-guen
+export EDITOR=nvim
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -100,3 +101,7 @@ alias install='sudo apt-get install'
 alias search='apt search'
 alias open='xdg-open'
 alias src="find . -maxdepth 1 -name '*.c' | sed 's/.\//SRC += /g' | sort | $CLIP_CMP"
+
+function gqlg() {
+	git clone http://github.com/qleguennec/$1.git
+}
