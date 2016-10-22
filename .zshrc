@@ -5,7 +5,7 @@
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="pure"
+ZSH_THEME="custom"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -101,7 +101,23 @@ alias install='sudo apt-get install'
 alias search='apt search'
 alias open='xdg-open'
 alias src="find . -maxdepth 1 -name '*.c' | sed 's/.\//SRC += /g' | sort | $CLIP_CMP"
+alias rantheme='sed -i "s/themes\/.*\.h/themes\/$(ls themes | shuf -n 1)/g" config.h'
+alias theme="grep theme config.h"
+
+export WP="$HOME/wp"
 
 function gqlg() {
 	git clone http://github.com/qleguennec/$1.git
+}
+
+function liblnk() {
+	ln -s $WP/lib$1 ./
+}
+
+function wp() {
+	cd $WP/$1
+}
+
+function lib() {
+	wp lib$1
 }
