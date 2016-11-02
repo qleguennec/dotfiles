@@ -121,3 +121,7 @@ function wp() {
 function lib() {
 	wp lib$1
 }
+
+function github() {
+	git clone http://github.com/$1/$2.git
+}

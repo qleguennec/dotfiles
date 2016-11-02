@@ -2,19 +2,22 @@ set number
 
 call plug#begin()
 
-Plug 'vim-airline/vim-airline'
-Plug 'morhetz/gruvbox'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-surround'
 Plug 'godlygeek/tabular'
 Plug 'raimondi/delimitmate'
 Plug 'myusuf3/numbers.vim'
+Plug 'joshdick/onedark.vim'
+Plug 'MaxSt/FlatColor'
+Plug 'vim-airline/vim-airline'
 
 call plug#end()
 
 set background=dark
-colorscheme gruvbox
+colorscheme onedark
+
 let g:airline_powerline_fonts = 1
+
 set number
 set linebreak	
 set showbreak=+++
@@ -32,16 +35,13 @@ set cindent
 set noexpandtab
 set tabstop=4 softtabstop=0 noexpandtab shiftwidth=4
 syntax on
+set list
  
-set ruler	
-let g:ycm_global_ycm_extra_conf = '/home/user/.ycm_extra_conf.py'
-let g:ycm_confirm_extra_conf = 0
+set ruler
 set wildignore+=*/tmp/*,*.o,*.a,build/* 
  
 set undolevels=1000
 set backspace=indent,eol,start	
-set list
-set colorcolumn=80
 
 nnoremap K 10j
 nnoremap L 10k
