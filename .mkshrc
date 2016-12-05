@@ -2,7 +2,7 @@ export MAIL42=qle-guen@student.42.fr
 export USER42=qle-guen
 export EDITOR=nvim
 export FCEDIT=nvim
-export PATH="$PATH:$HOME/.bin:$HOME/homebrew/bin"
+export PATH="$PATH:$HOME/.bin"
 export PS1='[0;36m$(pwd | sed "s,^$HOME,~,") [0;37mλ[0m '
 export WP="$HOME/wp"
 
@@ -10,6 +10,7 @@ if [[ `uname` == 'Darwin' ]]
 then
 	export HOMEBREW_CACHE=/tmp/mycache
 	export HOMEBREW_TEMP=/tmp/mytemp
+	export PATH="$PATH:/$HOME/.brew/bin"
 fi
 
 alias ls='ls -G'
