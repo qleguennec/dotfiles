@@ -14,10 +14,16 @@ then
 fi
 
 alias ls='ls -G'
-alias l='ls -lah -G'
+alias l='ls -lah -G --color=auto'
 
 alias gca='git commit -a'
 alias ga='git add'
 alias gp='git push'
 
 alias v='nvim'
+
+function re-libs() {
+	for lib in `ls -d lib*`; do
+		make -C "$lib" re
+	done
+}
