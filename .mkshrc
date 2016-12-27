@@ -27,3 +27,20 @@ function re-libs() {
 		make -C "$lib" re
 	done
 }
+
+function wp() {
+	cd $WP/$1
+}
+
+function test() {
+	cd $WP/test-lib$1
+}
+
+function lib() {
+	cd $WP/lib$1
+}
+
+function extest() {
+	test $1
+	make ex
+}
