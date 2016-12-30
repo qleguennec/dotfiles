@@ -11,16 +11,21 @@ then
 	export HOMEBREW_CACHE=/tmp/mycache
 	export HOMEBREW_TEMP=/tmp/mytemp
 	export PATH="$PATH:/$HOME/.brew/bin"
+
+	alias l='ls -lah -G'
+else
+	alias l='ls -lah -G --color=auto'
 fi
 
 alias ls='ls -G'
-alias l='ls -lah -G --color=auto'
 
 alias gca='git commit -a'
 alias ga='git add'
 alias gp='git push'
 
 alias v='nvim'
+
+alias rel='source $HOME/.mkshrc'
 
 function re-libs() {
 	for lib in `ls -d lib*`; do
