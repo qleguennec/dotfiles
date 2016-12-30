@@ -27,6 +27,16 @@ alias v='nvim'
 
 alias rel='source $HOME/.mkshrc'
 
+MAINGIT="http://github.com/qleguennec"
+
+function maingit() {
+	git clone "$MAINGIT/$1.git"
+}
+
+function lnl() {
+	ln -s "$WP/lib$1" ./
+}
+
 function re-libs() {
 	for lib in `ls -d lib*`; do
 		make -C "$lib" re
