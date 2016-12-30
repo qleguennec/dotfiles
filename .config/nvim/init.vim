@@ -1,4 +1,4 @@
-set number
+filetype plugin indent on
 
 call plug#begin()
 
@@ -10,6 +10,7 @@ Plug 'myusuf3/numbers.vim'
 Plug 'joshdick/onedark.vim'
 Plug 'MaxSt/FlatColor'
 Plug 'vim-airline/vim-airline'
+Plug 'alx741/vim-hindent'
 
 call plug#end()
 
@@ -29,11 +30,6 @@ set hlsearch
 set smartcase
 set ignorecase
 set incsearch
- 
-set autoindent
-set cindent
-set noexpandtab
-set tabstop=4 softtabstop=0 noexpandtab shiftwidth=4
 syntax on
 set list
  
