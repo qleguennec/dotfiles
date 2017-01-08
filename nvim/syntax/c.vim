@@ -1,4 +1,4 @@
-syntax keyword lib42type uc ui ul t_error t_list t_vector t_stack t_queue t_array t_htable t_timer t_string t_getopt t_unit t_matrix t_rbtree
+syntax keyword lib42type uc ui ul t_error t_list t_vector t_stack t_queue t_array t_htable t_timer t_string t_getopt t_unit t_matrix t_rbtree t_u32 t_u64 t_i32 t_i64
 highlight link lib42type Type
 
 syntax keyword v_thistype v_this
