@@ -6,11 +6,14 @@ export PATH="$PATH:$HOME/.bin"
 export PS1='[0;36m$(pwd | sed "s,^$HOME,~,") [0;37mλ[0m '
 export WP="$HOME/wp"
 
+set -o ignoreeof
+
 if [[ `uname` == 'Darwin' ]]
 then
 	export HOMEBREW_CACHE=/tmp/mycache
 	export HOMEBREW_TEMP=/tmp/mytemp
 	export PATH="$PATH:/$HOME/.brew/bin"
+	alias brew="$HOME/.brew/bin/brew"
 
 	alias l='ls -lah -G'
 else
@@ -22,6 +25,7 @@ alias ls='ls -G'
 alias gca='git commit -a'
 alias ga='git add'
 alias gp='git push'
+alias gs='git status'
 
 alias v='nvim'
 
@@ -37,9 +41,9 @@ function lnl() {
 	ln -s "$WP/lib$1" ./
 }
 
-function re-libs() {
+function libs() {
 	for lib in `ls -d lib*`; do
-		make -C "$lib" re
+		make -C "$lib" $1
 	done
 }
 

@@ -1,11 +1,4 @@
-syntax keyword lib42type uc ui ul t_error t_list t_vector t_stack t_queue t_array t_htable t_timer t_string t_getopt t_unit t_matrix t_rbtree t_u32 t_u64 t_i32 t_i64 t_u8 t_u32_v2 t_u32_v4 t_vll t_vect t_vll_node t_dict
+syntax keyword lib42type t_u32 t_u64 t_i32 t_i64 t_u8 t_i8 t_u32_v2 t_u32_v4 t_vll t_vect t_vll_node t_dict t_i32_v2 t_f32 t_f64 t_f32_v2 t_f64_v2
 highlight link lib42type Type
 
-syntax keyword v_thistype v_this
-highlight link v_thistype Exception
-
-syntax keyword unitfunct D_UNIT_FUNCT
-highlight link unitfunct String
-
-syntax keyword lib42define D_ERROR D_LIST D_VECTOR D_STACK D_QUEUE D_ARRAY D_HTABLE D_TIMER D_STRING D_GETOPT D_UNIT D_MATRIX D_RBTREE
-highlight link lib42define define
+syntax match Macro /\u\(\u\|\d\|_\)*/

@@ -38,6 +38,7 @@ set list
 
 set ruler
 set wildignore+=*/tmp/*,*.o,*.a,build/* 
+let g:ctrlp_follow_symlinks = 2
 
 set undolevels=1000
 set backspace=indent,eol,start	
