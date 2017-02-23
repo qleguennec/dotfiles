@@ -4,44 +4,32 @@ call plug#begin()
 
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-surround'
-Plug 'godlygeek/tabular'
 Plug 'raimondi/delimitmate'
 Plug 'myusuf3/numbers.vim'
-Plug 'vim-airline/vim-airline'
-Plug 'alx741/vim-hindent'
-Plug 'KeitaNakamura/neodark.vim'
-Plug 'easymotion/vim-easymotion'
+Plug 'dracula/vim'
 
 call plug#end()
 
-colorscheme neodark
-
-let g:airline_powerline_fonts = 1
-let mapleader="'"
-map <Leader> <Plug>(easymotion-prefix)
-
-let mapleader="'"
+colorscheme dracula
 
 set number
-set linebreak	
+set linebreak
 set showbreak=+++
 set textwidth=100
-set showmatch	
-set visualbell	
+set showmatch
+set visualbell
 
-set hlsearch	
+set hlsearch
 set smartcase
 set ignorecase
 set incsearch
 syntax on
-set list
 
 set ruler
 set wildignore+=*/tmp/*,*.o,*.a,build/* 
 let g:ctrlp_follow_symlinks = 2
 
 set undolevels=1000
-set backspace=indent,eol,start	
 
 nnoremap K 10j
 nnoremap L 10k
