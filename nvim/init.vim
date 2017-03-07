@@ -4,11 +4,14 @@ call plug#begin()
 
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'myusuf3/numbers.vim'
+Plug 'jreybert/vimagit'
 Plug 'dracula/vim'
 
 call plug#end()
 
 colorscheme dracula
+
+let mapleader = '\'
 
 set number
 set linebreak

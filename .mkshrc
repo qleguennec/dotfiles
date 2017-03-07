@@ -63,6 +63,3 @@ function extest() {
 	test $1
 	make ex
 }
-
-bind '^j'=down-history
-bind '^k'=up-history
