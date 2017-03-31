@@ -10,16 +10,11 @@ set linebreak
 set showbreak=+++
 set textwidth=100
 set showmatch
-set visualbell
 set wildmenu
+set ruler
 
 set hlsearch
 set smartcase
-set ignorecase
 set incsearch
-syntax on
 
-set ruler
 set wildignore+=*/tmp/*,*.o,*.a,build/* 
-
-set undolevels=1000

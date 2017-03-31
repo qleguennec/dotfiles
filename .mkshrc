@@ -37,6 +37,10 @@ function maingit() {
 	git clone "$MAINGIT/$1.git"
 }
 
+function vog() {
+	git clone "vogsphere@vogsphere.42.fr:intra/2017/activities/$1/qle-guen" $1
+}
+
 function lnl() {
 	ln -s "$WP/lib$1" ./
 }
