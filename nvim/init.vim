@@ -4,7 +4,7 @@ call plug#begin()
 
 call plug#end()
 
-colorscheme zellner
+colorscheme col
 
 set linebreak
 set showbreak=+++

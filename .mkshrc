@@ -3,7 +3,7 @@ export USER42=qle-guen
 export EDITOR=nvim
 export FCEDIT=nvim
 export PATH="$PATH:$HOME/.bin"
-export PS1='[0;36m$(pwd | sed "s,^$HOME,~,") [0;37mλ[0m '
+export PS1='[0;34m$(pwd | sed "s,^$HOME,~,") [0;37mλ[0m '
 export WP="$HOME/wp"
 
 set -o ignoreeof
