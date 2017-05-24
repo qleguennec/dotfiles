@@ -4,6 +4,7 @@ call plug#begin()
 
 call plug#end()
 
+set background=dark
 colorscheme col
 
 set linebreak
@@ -12,6 +13,7 @@ set textwidth=100
 set showmatch
 set wildmenu
 set ruler
+set number
 
 set hlsearch
 set smartcase
